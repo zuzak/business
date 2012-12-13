@@ -51,7 +51,7 @@
 	</title>
 </head>
 <body>
-	<img id="pic" src="business.jpg"  />
+	<img id="pic" src="business.jpg" alt="HAHA! BUSINESS!" />
 	<h1><?php echo $greetings[$index] ?></h1>
 </body>
 </html>
