@@ -1,4 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <?php
 	$greetings = array("Haha Business!",
 		"хаха бизнес!",
@@ -33,20 +32,27 @@
 	//Generate a random number for a greeting
 	$index = rand(0, count($greetings)-1);
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta http-equiv="refresh" content="2" />
+	<style>
+		body {
+			background-color:#d8d8d8;
+			text-align:center;
+		}
+		h1 {
+			font-family:'Helvetica',arial,sans-serif;
+		}
+	</style>
 	<title>
 		<?php echo $greetings[$index] ?>
 	</title>
 </head>
-<body bgcolor="#D8D8D8">
-	<center>
-		<img id="pic" src="business.jpg"  />
-		<font face="Helvetica"><h1><?php echo $greetings[$index] ?></h1></font>
-	</center>
+<body>
+	<img id="pic" src="business.jpg"  />
+	<h1><?php echo $greetings[$index] ?></h1>
 </body>
 </html>
 		
